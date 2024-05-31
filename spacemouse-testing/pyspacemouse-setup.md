@@ -31,3 +31,17 @@ cp hidapitester ~/.local/bin
 ```
 
 ## Windows
+
+**Warning:** Always use `python` and not `python3` on Windows!
+
+```bash
+mkdir pyspacemouse-install && cd pyspacemouse-install
+curl -OL https://github.com/libusb/hidapi/releases/download/hidapi-0.14.0/hidapi-win.zip
+unzip hidapi-win.zip
+mkdir -p ~/.local/include
+python -m venv .venv
+source .venv/Scripts/activate
+cp include/* .venv/Include
+cp x64/* .venv/Scripts/
+pip install pyspacemouse
+```
