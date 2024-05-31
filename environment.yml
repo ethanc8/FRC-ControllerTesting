@@ -1,0 +1,6 @@
+name: FRC-ControllerTesting
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python
